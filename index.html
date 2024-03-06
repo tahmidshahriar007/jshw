@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript References</title>
+	<!--css links-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+	
+	<div class="container" >
+		<!--button on & off-->
+		<h2 class="text-danger">Bulb on/off</h2>
+		<button class="btn btn-dark" onmousemove="bulbOn()">Bulb On</button>
+		<img id="bulb" src="images/off.gif" alt="">
+		<button class="btn btn-dark" onmousemove="bulbOff()">Bulb Off</button>
+		<hr>
+		<!--operators-->
+		<h2 class="text-danger">Addition of 5+10</h2>
+		<button class="btn btn-dark" onclick="calculation()">calculate</button>
+		<h3 id="value">click to find answer</h3>
+		<hr>
+		<!-- Date -->
+		<h2 class="text-danger">Date</h2>
+		<button class="btn btn-dark" onclick="showDate()">Click to show Date</button>
+		<h3 id="s_d">Show Date</h3>
+		<hr>
+		<!--Text Size-->
+		<h2 class="text-danger">Text Change</h2>
+		<button class="btn btn-dark" onclick="textSize()">Click Me</button>
+		<h3 id="t_s">Click to change text</h3>
+		<hr>
+		<!--Color Change-->
+		<h2 class="text-danger">Color Change</h2>
+		<button class="btn btn-dark" onclick="colorChange()">Click Me</button>
+		<h3 id="t_c">Click to change color</h3>
+		<hr>
+		<!--Hide Text-->
+		<h2 class="text-danger">Hide Text</h2>
+		<button class="btn btn-dark" onmousemove="textHide()">Click Me</button>
+		<h3 id="t_h">Hover to hide text</h3>
+		<hr>
+		<!--Use of Strings-->
+		<h2 class="text-danger">List of Text Using Strings</h2>
+		<button class="btn btn-dark" onmousemove="listString()">Click Me</button>
+		<h3 id="l_s">List of Strings</h3>
+		<hr>
+		<!--Celsius to Farenheit using Function, Problem here-->
+		<h2 class="text-danger">Celsius to Farenheit using Function</h2>
+		<button class="btn btn-dark" onclick="toCelsius()">calculate</button>
+		<h3 id="c_f">Celsius to Farenheit</h3>
+		<hr>
+		<!--Double quote in a string.-->
+		<h2 class="text-danger">Double quote string</h2>
+		<button class="btn btn-dark" onclick="quoteString()">Click Me</button>
+		<h3 id="d_q">Click to see</h3>
+		<hr>
+		<!-- charAt method -->
+		<h2 class="text-danger">Hello World</h2>
+		<button class="btn btn-dark" onclick="charAtMethod()">Click Me</button>
+		<h3 id="c_s">Click to identify 10th Character</h3>
+		<hr>
+		<!-- charCodeAt method -->
+		<h2 class="text-danger">Hello World</h2>
+		<button class="btn btn-dark" onclick="charCodeMethod()">Click Me</button>
+		<h3 id="cus_s">Click to identify unicode of 10th Character</h3>
+		<hr>
+		<!-- at method -->
+		<h2 class="text-danger">Hoorah</h2>
+		<button class="btn btn-dark" onclick="atMethod()">Click Me</button>
+		<h3 id="cus_a">Click to identify 3rd character of Hoorah</h3>
+		<hr>
+		<!-- slice method -->
+		<h2 class="text-danger">Pineapple, Strawberry, Watermelon</h2>
+		<button class="btn btn-dark" onclick="sliceMethod()">Click Me</button>
+		<h3 id="s_m">Slice between words using position</h3>
+		<hr>
+		<!-- substring method -->
+		<h2 class="text-danger">Pineapple, Strawberry, Watermelon</h2>
+		<button class="btn btn-dark" onclick="subStringMethod()">Click Me</button>
+		<h3 id="sub_m">Slice between words using Substring</h3>
+		<hr>
+		<!-- Uppercase method -->
+		<h2 class="text-danger">Uppercase Method. Click to see change</h2>
+		<button class="btn btn-dark" onclick="upperMethod()">Click Me</button>
+		<h3 id="up_m">JavaScript is Fun</h3>
+		<hr>
+		<!-- Lowercase method -->
+		<h2 class="text-danger">Lowercase Method. Click to see change</h2>
+		<button class="btn btn-dark" onclick="lowerMethod()">Click Me</button>
+		<h3 id="low_m">JavaScript is Fun</h3>
+		<hr>
+		<!-- toFixed method -->
+		<h2 class="text-danger">toFixed Method</h2>
+		<button class="btn btn-dark" onclick="fixedMethod()">See changes</button>
+		<h3 id="fix_m">Perfect for money type purpose</h3>
+		<hr>
+		<!-- toString method -->
+		<h2 class="text-danger">toString Method</h2>
+		<button class="btn btn-dark" onclick="toStringMethod()">See changes</button>
+		<h3 id="str_m">Click to see</h3>
+		<hr>
+		<!-- toExponential method -->
+		<h2 class="text-danger">toExponential Method</h2>
+		<button class="btn btn-dark" onclick="expoMethod()">See changes</button>
+		<h3 id="exp_m">Click to see</h3>
+		<hr>
+		<!-- toPrecision method -->
+		<h2 class="text-danger">toPrecision Method</h2>
+		<button class="btn btn-dark" onclick="preMethod()">See changes</button>
+		<h3 id="pre_m">Click to see</h3>
+		<hr>
+		<!-- parseInt() method -->
+		<h2 class="text-danger">parseInt</h2>
+		<button class="btn btn-dark" onclick="parseMethod()">See changes</button>
+		<h3 id="par_m">Gives output as whole number</h3>
+		<hr>
+		<!-- parseFloat() method -->
+		<h2 class="text-danger">parseFloat</h2>
+		<button class="btn btn-dark" onclick="floatMethod()">See changes</button>
+		<h3 id="pfl_m">Gives output as a number</h3>
+		<hr>
+		<!-- isInteger -->
+		<h2 class="text-danger">Integer numbers</h2>
+		<button class="btn btn-dark" onclick="intNumber()">Click Me</button>
+		<h3 id="n_int">is 24 and 23.33 an integer? Click to see change</h3>
+		<hr>
+		<!-- Array -->
+		<h2 class="text-danger">Array Practice</h2>
+		<button class="btn btn-dark" onclick="arrayPrac()">See changes</button>
+		<h3 id="a_m">Inputs data on js to display</h3>
+		<hr>
+		<!-- Array length -->
+		<h2 class="text-danger">Apple, Banana, Orange, Pineapple, Watermelon</h2>
+		<h3 id="l_m">How many fruits are there above?</h3>
+		<button class="btn btn-dark" onclick="arrayLengthMethod()">Answer</button>
+		<hr>
+		<!-- Array at -->
+		<h2 class="text-danger">Apple, Banana, Orange, Pineapple</h2>
+		<h3 id="at_m">What is the 4th fruit named?</h3>
+		<button class="btn btn-dark" onclick="arrayAtMethod()">Answer</button>
+		<hr>
+		<!-- Array pop -->
+		<h2 class="text-danger">Apple, Banana, Orange, Pineapple, Watermelon</h2>
+		<h3 id="pop">Eliminates last array</h3>
+		<button class="btn btn-dark" onclick="popMethod()">See changes</button>
+		<hr>
+		<!-- Array push -->
+		<h2 class="text-danger">Apple, Banana, Orange, Pineapple</h2>
+		<h3 id="push">Add last array</h3>
+		<button class="btn btn-dark" onclick="pushMethod()">Add changes</button>
+		<hr>
+		<!-- Array shift -->
+		<h2 class="text-danger">Apple, Banana, Orange, Pineapple, Watermelon</h2>
+		<h3 id="shift">Remove first array</h3>
+		<button class="btn btn-dark" onclick="shiftMethod()">Click Me</button>
+		<hr>
+		<!-- Array unshift -->
+		<h2 class="text-danger">Banana, Orange, Pineapple, Watermelon</h2>
+		<h3 id="unshift">Add first array</h3>
+		<button class="btn btn-dark" onclick="unshiftMethod()">Click Me</button>
+		<hr>
+		<!-- Array sort & reverse -->
+		<h2 class="text-danger">Lemon, Apple, Orange, Banana</h2>
+		<h3 id="sort">sort them alphabetically and reverse</h3>
+		<button class="btn btn-dark" onclick="sortMethod()">Click Me</button>
+		<hr>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
